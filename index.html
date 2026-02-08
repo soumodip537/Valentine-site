@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You, From My Heart ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.25);
+      backdrop-filter: blur(8px);
+      padding: 10px 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .music-btn{
+      background: rgba(255,255,255,0.25);
+      border: 1px solid rgba(255,255,255,0.4);
+      color:#fff;
+      border-radius:999px;
+      padding:6px 12px;
+      font-size:0.8rem;
+      cursor:pointer;
+    }
+    section {
+      min-height: 100vh;
+      padding: 90px 22px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .card {
+      max-width: 720px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 22px;
+      padding: 34px 26px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+    h1, h2 { margin-bottom: 14px; }
+    p { line-height: 1.7; font-size: 1.05rem; }
+    .heart { font-size: 3rem; animation: beat 1.2s infinite; margin: 14px 0; }
+    @keyframes beat { 0%,100%{transform:scale(1);}50%{transform:scale(1.25);} }
+    ul { text-align: left; max-width: 520px; margin: 18px auto; padding: 0; list-style: none; }
+    ul li { margin-bottom: 10px; }
+    button {
+      margin-top: 18px;
+      background: #fff;
+      color: #ff4d6d;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hidden { display: none; }
+    /* Proposal modal */
+    .modal{
+      position:fixed; inset:0; background:rgba(0,0,0,0.6);
+      display:flex; align-items:center; justify-content:center; z-index:2000;
+    }
+    .modal .box{
+      background:#fff; color:#ff4d6d; padding:28px 22px; border-radius:20px;
+      max-width:360px; text-align:center;
+    }
+    .modal button{ margin:10px; }
+  </style>
+</head>
+<body><nav>
+  <a href="#home">Home</a>
+  <a href="#feelings">My Feelings</a>
+  <a href="#compliments">About You</a>
+  <a href="#distance">Long Distance</a>
+  <a href="#promise">Promise</a>
+  <a href="#question">Game</a>
+  <a href="#confession">Last Page</a>
+  <button class="music-btn"<iframe width="0" height="0" src="https://www.youtube.com/embed/57iPcedEZ9o?autoplay=0" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> onclick="toggleMusic()">🎵 Music</button>
+</nav><section id="home">
+  <div class="card">
+    <h1>Hey Anushkaa ❤️</h1>
+    <div class="heart">💖</div>
+    <p>
+      Ei choto website ta sudhu tomar jonno.
+      Jokhon mon ta ektu off lagbe, ba sudhu curiosity hobe — ekhane chole esho.
+      Eta amar moner ekta choto corner 🤍
+    </p>
+  </div>
+</section><section id="feelings">
+  <div class="card">
+    <h2>What I Feel (Moner Kotha) 💭</h2>
+    <p>
+      Ami thik jani na kokhon theke, but aste aste  tumi amar diner ekta important part hoye gecho.
+      Tomar sathe kotha bola ta khub easyy lage — kono pressure nei, kono fake kichu nei.
+      Amra jokhon kotha bola shuru korlam, tokhon thekei amar mone holo je eta naturally cholche.
+    </p>
+    <p>
+      Eta besi kichui na ar na kono expectations 
+      Sudhu ekta bhalo lagar feeling, halka care,
+      ar ekta bond jeta astee astee amii grow korte chaiyechii and hope je tumio setai chaho ,its new but I know that this will be ur best bond with anyone ever 
+    </p>
+  </div>
+</section><section id="compliments">
+  <div class="card">
+    <h2>Things I Like About You ✨</h2>
+    <ul>
+      <li>💫 The way you talk — calm yet full of meaning</li>
+      <li>💫 Your honesty, even in small things</li>
+      <li>💫 How you make conversations feel natural</li>
+      <li>💫 Your kindness — it shows without trying</li>
+      <li>💫 The comfort I feel just talking to you</li>
+    </ul>
+  </div>
+</section><section id="distance">
+  <div class="card">
+    <h2>About This Distance 🌍</h2>
+    <p>
+      Yes, we are far — different places, different routines, different skies.
+      But somehow, words travel faster than distance. Even from miles away,
+      your presence reaches me. And maybe that’s what makes this special —
+      choosing to stay connected even when it’s not easy.
+    </p>
+  </div>
+</section><section id="promise">
+  <div class="card">
+    <h2>A Small Promise 🤍</h2>
+    <p id="promiseText">I promise to be genuine, patient, and honest — no matter where this goes.</p>
+    <button onclick="reveal()">Tap One Last Time</button>
+    <p id="secret" class="hidden">I’m really glad you exist, and I’m even so much happier  that I met a so beautifull person like you  🌸</p>
+  </div>
+</section><section id="question">
+  <div class="card">
+    <h2>A Small Game For You 🎮💖</h2>
+    <p>
+      Since we are still getting to know each other, I didn’t want anything awkward or heavy.
+      Just a light, fun little game — like us.
+    </p>
+    <p><b>Rule:</b> Click the hearts and see what happens ✨</p>
+    <div id="game" style="margin-top:20px;">
+      <button onclick="pick(1)">❤️</button>
+      <button onclick="pick(2)">❤️</button>
+      <button onclick="pick(3)">❤️</button>
+    </div>
+    <p id="gameResult" style="margin-top:18px;"></p>
+  </div>
+</section><script>
+  function reveal() {
+    document.getElementById('secret').classList.remove('hidden');
+  }
+  // surprise text
+  function reveal() {
+    document.getElementById('secret').classList.remove('hidden');
+  }
+
+  // music toggle (replace song.mp3 with your file)
+  const music = new Audio('song.mp3');
+  music.loop = true;
+  let playing = false;
+  function toggleMusic(){
+    if(!playing){ music.play(); playing = true; }
+    else{ music.pause(); playing = false; }
+  }
+
+  // proposal modal
+  function openModal(){
+    const m = document.createElement('div');
+    m.className = 'modal';
+    m.innerHTML = `
+      <div class="box">
+        <h3>Will you be my Valentine? ❤️</h3>
+        <button onclick="yes(this)">Yes 💖</button>
+        <button onclick="no(this)">No 🙈</button>
+      </div>`;
+    document.body.appendChild(m);
+  }
+  function yes(btn){ btn.parentElement.innerHTML = '<h3>You just made me smile a lot 😍</h3>'; }
+  function no(btn){ btn.innerText = 'Yes 😌'; }
+  // surprise text
+  function reveal() {
+    document.getElementById('secret').classList.remove('hidden');
+  }
+
+  // music toggle (replace song.mp3 with your file)
+  const music = new Audio('song.mp3');
+  music.loop = true;
+  let playing = false;
+  function toggleMusic(){
+    if(!playing){ music.play(); playing = true; }
+    else{ music.pause(); playing = false; }
+  }
+
+  // light heart game
+  const messages = [
+    "Tomar kotha gulo khub shanto ar bhalo lage 🤍",
+    "Tomar sathe kotha bole time ta quickly kete jay ✨",
+    "Dure thakleo, tumi somehow amar din ta better kore dao 🌍",
+    "Ami khushi je amra kotha bola start korechhi 🌸",
+    "Kono rush nei… sudhu bhalo lagar ekta choto shuru 💖"
+  ];
+  function pick(){
+    const msg = messages[Math.floor(Math.random()*messages.length)];
+    document.getElementById('gameResult').innerText = msg;
+  }
+
+  // proposal modal (kept playful)
+  function openModal(){
+    const m = document.createElement('div');
+    m.className = 'modal';
+    m.innerHTML = `
+      <div class="box">
+        <h3>Do you like talking to me? 😊</h3>
+        <button onclick="yes(this)">Yes 🌸</button>
+        <button onclick="no(this)">A little 😌</button>
+      </div>`;
+    document.body.appendChild(m);
+  }
+  function yes(btn){ btn.parentElement.innerHTML = '<h3>That honestly means a lot 🤍</h3>'; }
+  function no(btn){ btn.parentElement.innerHTML = '<h3>I’ll take that too 😄</h3>'; }
+</script><section id="confession">
+  <div class="card">
+    <h2>One Honest Thing I Want to Say 🤍</h2>
+    <p>
+      Eta lekha ta amar jonno easy chhilo na, so ami khub simple bhabei bolchi.
+      Ami tomake <b>bhalo lagte shuru korechi</b> — slowly, naturally.
+      No drama, no pressure, just a very genuine feeling.
+    </p>
+    <p>
+      Ami jani amra ekhono ekjon-ke properly chini ni,
+      ar long distance-o ache.
+      Tai ami kono expectations niye bolchi na.
+      I just want you to know — tomar sathe kotha bola,
+      ar tomar presence amar kachhe honestly special hoye geche.
+    </p>
+    <p>
+      Jodi tumi eta ke shudhu ekta sweet, honest confession hisebe nao,
+      I’ll completely respect that.
+      Amader bond jemon achhe, seta amar kachhe already khub valuable 🌸
+    </p>
+    <div class="heart">❤️</div>
+    <p style="font-size:0.95rem; opacity:0.9;">
+      You don’t have to reply now 🙂 Take your time.
+      Whatever you feel, it’s completely okay — I just wanted to be honest and at last I genuinely want to sayy that I lovee youu my cutiee 
+    </p>
+  </div>
+</section></body>
+</html>
